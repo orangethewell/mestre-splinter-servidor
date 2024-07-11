@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="image.png">
+    <title>Letreiro Digital</title>
+    <style>
+       html{
+        background-image: url(2013-08-19-batman-arkham-origins-chapeleiro-louco.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: white;
+            font-family: 'Times New Roman';
+            height: 100%;
+            transition: all 500ms ease-in-out 500ms;
+            overflow: hidden;
+       }
+       body {
+            display: flex;
+            justify-content: left;
+            align-items: left;
+            height: 400vh;
+            margin: 0;
+        }
+        #container {
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+            border: 1px solid #ffffff;
+            position: relative;
+        }
+        #marquee {
+            position: absolute;
+            white-space: nowrap;
+        }
+        
+    </style>
+    <script>
+        window.onload = function() {
+            let marquee = document.getElementById('marquee');
+            let container = document.getElementById('container');
+            let speed = 2; // Controle de velocidade do letreiro
+            let direction = 1; // 1 para direita, -1 para esquerda
+            let position = 0;
+
+            function moveMarquee() {
+                position += speed * direction;
+                if (position > container.clientWidth || position < -marquee.clientWidth) {
+                    position = -marquee.clientWidth; // Reinicia do lado esquerdo
+                }
+                marquee.style.left = position + 'px';
+                requestAnimationFrame(moveMarquee);
+            }
+
+            moveMarquee();
+        }
+    </script>
+</head>
+<body>
+    <h1 id="container">
+        <h1 id="marquee">Isso é uma demonstração dos seus Serviços</h1>
+    </h1>
+    <a href="Pagina03.html">
+
+        <button>Clique para Ir para Outra Página</button>
+
+    </a>
+</body>
+</html>

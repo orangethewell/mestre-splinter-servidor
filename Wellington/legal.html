@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en" id="rooter">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="image.png">
+    <title>Allan é Gay</title>
+    <style>
+        html {
+            background-image: url(image2.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: white;
+            font-family: 'Times New Roman';
+            height: 100%;
+            transition: all 500ms ease-in-out 500ms;
+            overflow: hidden;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100%;
+            min-width: 100%;
+            margin: 0;
+            align-items: center;
+            justify-content: center;
+            backdrop-filter: brightness(30%);
+        }
+
+        h1, a, p {
+            filter: brightness(2.0)
+
+        }
+
+        h1, a {
+            text-align: center;
+            text-shadow: 0 0 32px rgba(255, 255, 255, 255);
+            font-size: 124px;
+            font-weight: bold;
+            transition: all 2s ease-in-out 500ms ;
+        }
+
+        p {
+            text-shadow: 0 0 32px rgba(255, 255, 255, 255);
+            font-size: 24px;
+            transition: all 2s ease-in-out 500ms ;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .invisible, .invisible > * {
+            text-shadow: none;
+            color: transparent;
+        }
+
+        .root-hover {
+            transition: all 2s ease-in-out 200ms;
+            background-color: white;
+        }
+
+        :not(.root-hover, h1, a, p) {
+            transition: all 2s ease-in-out 200ms;
+        }
+
+        iframe {
+           display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title" class="invisible">O <a id="hover-link" onclick="stump()" href="#">PRINCIPE?</a></h1>
+    <h1 id="date" class="invisible">SOU O PRINCIPE DAS TREVAS, SOU O BATYMAN</h1>
+    <p id="question" class="invisible">É isso que você queria Moreira?</p>
+    <script>
+        function getRandomArbitrary(min, max) {
+            return Math.random() * (max - min) + min;
+        }
+
+        function stump() {
+                const link = document.getElementById('hover-link');
+                const body = document.body;
+                body.classList.add('root-hover');
+                
+                let randomAudio = Math.ceil(getRandomArbitrary(1, 10));
+                console.log(randomAudio)
+                switch (randomAudio) {
+                    case 1: 
+                    let iframe = document.createElement("iframe");
+                    iframe.setAttribute("src", "https://www.youtube.com/embed/kmcTEZTrsNg?autoplay=1&si=yO0pOZGK1hGEEUcc");
+                    iframe.setAttribute("title", "YouTube video player"); 
+                    iframe.setAttribute("frameborder", 0);
+                    iframe.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share");
+                    iframe.setAttribute("referrerpolicy", "strict-origin-when-cross-origin");
+                    body.appendChild(iframe);
+                    break;
+
+                    case 2:
+                    let iframe2 = document.createElement("iframe");
+                    iframe2.setAttribute("src", "https://www.youtube.com/embed/AbluKa3cGXw?autoplay=1&si=k3H8MjWFG7gf-kzs");
+                    iframe2.setAttribute("title", "YouTube video player"); 
+                    iframe2.setAttribute("frameborder", 0);
+                    iframe2.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share");
+                    iframe2.setAttribute("referrerpolicy", "strict-origin-when-cross-origin");
+                    body.appendChild(iframe2);
+                    break;
+                    
+                    case 3:
+                    let iframe3 = document.createElement("iframe");
+                    iframe3.setAttribute("src", "https://www.youtube.com/embed/UlpykKR_ZQg?autoplay=1&si=LpZr922v1Yjj5WpS");
+                    iframe3.setAttribute("title", "YouTube video player"); 
+                    iframe3.setAttribute("frameborder", 0);
+                    iframe3.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share");
+                    iframe3.setAttribute("referrerpolicy", "strict-origin-when-cross-origin");
+                    body.appendChild(iframe3);
+                    break;
+
+                    case 4:
+                    let iframe4 = document.createElement("iframe");
+                    iframe4.setAttribute("src", " https://www.youtube.com/embed/pVDS25GmzJ8?autoplay=1&si=MMd87Jutp17Tuhc-");
+                    iframe4.setAttribute("title", "YouTube video player"); 
+                    iframe4.setAttribute("frameborder", 0);
+                    iframe4.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share");
+                    iframe4.setAttribute("referrerpolicy", "strict-origin-when-cross-origin");
+                    body.appendChild(iframe4);
+                    break;
+
+                    case 5:
+                    let iframe6 = document.createElement("iframe");
+                    iframe6.setAttribute("src", "https://www.youtube.com/embed/Y7S96nA7NE4?autoplay=1&si=fVaXinQEUuhrZej3");
+                    iframe6.setAttribute("title", "YouTube video player"); 
+                    iframe6.setAttribute("frameborder", 0);
+                    iframe6.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share");
+                    iframe6.setAttribute("referrerpolicy", "strict-origin-when-cross-origin");
+                    body.appendChild(iframe6);
+                    break;
+
+                    case 6:
+                    let iframe7 = document.createElement("iframe");
+                    iframe7.setAttribute("src", "https://www.youtube.com/embed/VRuIeEP37k4?autoplay=1&si=cAM7Tvk6bU4fkA9b");
+                    iframe7.setAttribute("title", "YouTube video player"); 
+                    iframe7.setAttribute("frameborder", 0);
+                    iframe7.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share");
+                    iframe7.setAttribute("referrerpolicy", "strict-origin-when-cross-origin");
+                    body.appendChild(iframe7);
+                    break;
+
+                    case 7:
+                    let iframe8 = document.createElement("iframe");
+                    iframe8.setAttribute("src", "https://www.youtube.com/embed/0NjxUrPK-BM?autoplay=1&si=TvZectKnAqR4SPX4");
+                    iframe8.setAttribute("title", "YouTube video player"); 
+                    iframe8.setAttribute("frameborder", 0);
+                    iframe8.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share");
+                    iframe8.setAttribute("referrerpolicy", "strict-origin-when-cross-origin");
+                    body.appendChild(iframe8);
+                    break;
+
+                    case 8:
+                    let iframe9 = document.createElement("iframe");
+                    iframe9.setAttribute("src", "https://www.youtube.com/embed/3mfTB5wLTtg?autoplay=1&si=sV7sh1I6PPKm5fTJ");
+                    iframe9.setAttribute("title", "YouTube video player"); 
+                    iframe9.setAttribute("frameborder", 0);
+                    iframe9.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share");
+                    iframe9.setAttribute("referrerpolicy", "strict-origin-when-cross-origin");
+                    body.appendChild(iframe9);
+                    break;
+
+                    case 9:
+                    let iframe10 = document.createElement("iframe");
+                    iframe10.setAttribute("src", "https://www.youtube.com/embed/6Joyj0dmkug?autoplay=1si=UIa1v3cWKOMEbVHK");
+                    iframe10.setAttribute("title", "YouTube video player"); 
+                    iframe10.setAttribute("frameborder", 0);
+                    iframe10.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share");
+                    iframe10.setAttribute("referrerpolicy", "strict-origin-when-cross-origin");
+                    body.appendChild(iframe9);
+                    break;
+
+                    default:
+                    let iframe5 = document.createElement("iframe");
+                    iframe5.setAttribute("src", "https://www.youtube.com/embed/Pi_p6q-AGhY?autoplay=1&si=JXTxdA7McGzx5rxd");
+                    iframe5.setAttribute("title", "YouTube video player"); 
+                    iframe5.setAttribute("frameborder", 0);
+                    iframe5.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share");
+                    iframe5.setAttribute("referrerpolicy", "strict-origin-when-cross-origin");
+                    body.appendChild(iframe5)
+                    break;
+                }
+        }
+
+        function turnTitleVisible() {
+            let title = document.getElementById("title");
+            title.classList.remove("invisible");
+        }
+
+        function turnDateVisible() {
+            let date = document.getElementById("date");
+            date.classList.remove("invisible");
+        }
+
+        function turnQuestionVisible() {
+            let question = document.getElementById("question");
+            question.classList.remove("invisible");
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const link = document.getElementById('hover-link');
+            const body = document.body;
+            
+            link.addEventListener('mouseover', function() {
+                stump()
+            });
+            
+            link.addEventListener('mouseout', function() {
+                body.classList.remove('root-hover');
+            });
+        });
+
+        setTimeout(turnTitleVisible, 2000);
+        setTimeout(turnDateVisible, 5000);
+        setTimeout(turnQuestionVisible, 10000);
+    </script>
+</body>
+</html>
